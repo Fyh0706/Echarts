@@ -23,6 +23,9 @@
     <div>
       <lint_chart title="治愈死亡疫情图" :data="dataList3"></lint_chart>
     </div>
+    <div>
+      <mytable></mytable>
+    </div>
   </div>
 </template>
 <script>
@@ -30,7 +33,7 @@
 import china_domestic from "./china_domestic";
 import mymap from "./map";
 import lint_chart from "./lint_chart";
-import add_chart from "./add_chart";
+import mytable from "./mytable";
 import { getChinaData } from "@/api";
 export default {
   name: "yqdt",
@@ -57,8 +60,8 @@ export default {
       );
       let notSureList = list.map(item => item.wjw_susNum);
       return [
-        { til: "新增病例", list: sureList.reverse() },
-        { til: "新增疑似病例", list: notSureList.reverse() }
+        { til: "新增病例",color:"", list: sureList.reverse() },
+        { til: "新增疑似病例",color:"#ec9217", list: notSureList.reverse() }
       ];
     },
     dataList2() {
@@ -86,7 +89,7 @@ export default {
     china_domestic,
     mymap,
     lint_chart,
-    add_chart
+    mytable
   }
 };
 </script>
