@@ -30,7 +30,7 @@ export default {
   },
   created() {
     moveInOut().then(data => {
-      console.log(data);
+      // console.log(data);
        this.list=this.moveInList = data.result.moveInList||[];
       this.moveOutList = data.result.moveOutList;
       this.time=data.result.time.replace(/(\d{4})(\d{2})(\d{2})/,'$1年$2月$3日')
