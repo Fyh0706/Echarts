@@ -83,6 +83,28 @@ export default {
                 }
             }
         }
+        .doubt{
+            .num{
+                color:rgb(7, 43, 161);
+            }
+            .add{
+                color:rgb(7, 43, 161);
+                span{
+                    color:rgb(7, 43, 161);
+                }
+            }
+        }
+        .healthy{
+            .num{
+                color:rgb(17, 199, 144);
+            }
+            .add{
+                color:rgb(17, 199, 144);
+                span{
+                    color:rgb(17, 199, 144);
+                }
+            }
+        }
     }
 }
 
