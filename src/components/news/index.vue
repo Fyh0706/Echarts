@@ -25,7 +25,7 @@ export default {
   },
   created() {
     getZbData().then(data => {
-      console.log(data);
+      // console.log(data);
 
       this.allList = data.items;
       this.list = this.allList.slice(0, 10);

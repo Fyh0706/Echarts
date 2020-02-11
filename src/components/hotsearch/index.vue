@@ -28,7 +28,7 @@ export default {
   },
   created() {
     getHotData().then(data => {
-      console.log(data);
+      // console.log(data);
       this.todayTitle = data[0].list[0].title;
       this.studyTitle = data[0].list[3].title;
       this.knowTitle = data[0].list[1].title;

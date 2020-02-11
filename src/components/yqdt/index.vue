@@ -48,7 +48,7 @@ export default {
   created() {
     getChinaData().then(data => {
       this.$store.dispatch("getChinaData", data);
-      console.log(data);
+      // console.log(data);
     });
   },
   computed: {
