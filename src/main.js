@@ -7,6 +7,10 @@ import store from './store'
 
 Vue.config.productionTip = false
 Vue.use(ElementUI);
+router.beforeEach((to, from, next) => {
+  document.title=to.meta.til||'疫情'
+      next();
+})
 new Vue({
   router,
   store,

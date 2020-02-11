@@ -19,16 +19,20 @@ export default {
   filters: {
     formatTime(val) {
       let t = new Date((val + "000") / 1);
+      function f(val) {
+        return val > 9 ? val : '0' + val;
+      }
+
       return (
-        t.getMonth() +
-        1 +
+        f(t.getMonth() +
+        1) +
         "月" +
-        t.getDate() +
+        f(t.getDate()) +
         "日" +
         "  " +
-        t.getHours() +
+        f(t.getHours()) +
         ":" +
-        t.getMinutes()
+        f(t.getMinutes())
       );
     }
   },

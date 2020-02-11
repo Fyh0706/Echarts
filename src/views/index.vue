@@ -13,7 +13,7 @@
           <router-link to="/qxmap">迁徙地图</router-link>
         </div>
         <div>
-          <router-link to="/hotsearch">全名热搜</router-link>
+          <router-link to="/hotsearch">疫情热搜</router-link>
         </div>
         <div>
           <router-link to="/news">实时直播</router-link>
