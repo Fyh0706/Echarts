@@ -60,7 +60,7 @@ export default {
       );
       let notSureList = list.map(item => item.wjw_susNum);
       return [
-        { til: "新增病例",color:"", list: sureList.reverse() },
+        { til: "新增病例",color:"#42b983", list: sureList.reverse() },
         { til: "新增疑似病例",color:"#ec9217", list: notSureList.reverse() }
       ];
     },
@@ -70,8 +70,8 @@ export default {
       let sureList = list.map(item => item.cn_conNum);
       let notSureList = list.map(item => item.cn_susNum);
       return [
-        { til: "确诊", list: sureList },
-        { til: "疑似", list: notSureList }
+        { til: "确诊",color:"#66d46", list: sureList },
+        { til: "疑似",color:"#546d35", list: notSureList }
       ];
     },
     dataList3() {
@@ -80,8 +80,8 @@ export default {
       let sureList = list.map(item => item.cn_cureNum);
       let notSureList = list.map(item => item.cn_deathNum);
       return [
-        { til: "治愈", list: sureList },
-        { til: "死亡", list: notSureList }
+        { til: "治愈",color:"#42b353", list: sureList },
+        { til: "死亡",color:"#4612f", list: notSureList }
       ];
     }
   },
