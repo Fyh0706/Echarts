@@ -72,7 +72,7 @@ export default {
         width: 30px;
       }
       span:nth-child(2) {
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 600;
       }
       span:nth-child(3) {
